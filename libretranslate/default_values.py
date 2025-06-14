@@ -117,6 +117,11 @@ _default_options_objects = [
         'value_type': 'str'
     },
     {
+        'name': 'FRONTEND_LANGUAGE',
+        'default_value': '',
+        'value_type': 'str'
+    },
+    {
         'name': 'FRONTEND_TIMEOUT',
         'default_value': 500,
         'value_type': 'int'
@@ -158,6 +163,11 @@ _default_options_objects = [
     },
     {
         'name': 'REQUIRE_API_KEY_FINGERPRINT',
+        'default_value': False,
+        'value_type': 'bool'
+    },
+    {
+        'name': 'HIDE_API',
         'default_value': False,
         'value_type': 'bool'
     },

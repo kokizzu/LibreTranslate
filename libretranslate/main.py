@@ -105,6 +105,13 @@ def get_args():
         help="Set frontend default language - target (%(default)s)",
     )
     parser.add_argument(
+        "--frontend-language",
+        type=str,
+        default=DEFARGS['FRONTEND_LANGUAGE'],
+        metavar="<language code>",
+        help="Set frontend interface language (%(default)s)",
+    )
+    parser.add_argument(
         "--frontend-timeout",
         type=int,
         default=DEFARGS['FRONTEND_TIMEOUT'],
@@ -152,6 +159,12 @@ def get_args():
         default=DEFARGS['REQUIRE_API_KEY_FINGERPRINT'],
         action="store_true",
         help="Require use of an API key for programmatic access to the API, unless the client also matches a fingerprint",
+    )
+    parser.add_argument(
+        "--hide-api",
+        default=DEFARGS['HIDE_API'],
+        action="store_true",
+        help="Hide the API request/response fields in the frontend",
     )
     parser.add_argument(
         "--under-attack",
